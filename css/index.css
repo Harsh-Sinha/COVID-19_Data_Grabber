@@ -1,0 +1,73 @@
+/*Define Content Padding*/
+div.container-fluid
+{
+	padding: 1em 5em 1em 5em;
+}
+
+div.row
+{
+	padding-top: 0.5em;
+}
+
+/*Format Section Headers*/
+div.section_header
+{
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: 1em;
+	margin-top: 0.5em;
+	padding-bottom: 2.5em;
+}
+
+/*Format Data Summary Cards*/
+div.data_summary
+{
+	margin: 0.5em 0em 0em 0em;
+}
+
+div.data_summary_entry
+{
+	position: relative;
+	bottom: 1.5em;
+	width: 80%;
+	margin-left: 5%;
+	height: 100%;
+}
+
+/*Format Data Tables*/
+h4#table_name
+{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	right: 1%;
+}
+
+table
+{
+	width: 80%;
+	margin: 0% 10% 5% 7.75%;
+	border: 2px solid black;
+}
+
+th
+{
+	background-color: lightblue;
+}
+
+tr:nth-child(even)
+{
+	background-color: lightgrey;
+}
+
+/*Format Back To Top Buttons*/
+a.back_to_top
+{
+	width: 20%;
+	position: relative;
+	left: 41%;
+}

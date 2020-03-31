@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID-19 Data</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="javascript/index_cdc_data_grabber.js"></script>
+	<script type="text/javascript" src="javascript/index_jh_data_grabber.js"></script>
+	<script type="text/javascript" src="javascript/index_wm_data_grabber.js"></script>
+	<script type="text/javascript" src="javascript/index_who_data_grabber.js"></script>
+</head>
+<body>
+	<!-- Main Bootstrap Container -->
+	<div class="container-fluid">
+		
+		<!-- Section Title -->
+		<div class="jumbotron row section_header">
+			<h4>At a Glance</h4>
+		</div>
+
+		<!-- Data Summary from Different Sources -->
+		<div class="row data_summary">
+
+			<div class="col-md-6">
+				<div class="card data_summary_entry">
+				  <div class="card-body">
+				    <h5 class="card-title">CDC</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Data Summary</h6>
+				    <p class="card-text cdc_data_summary">...</p>
+				    <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html" class="card-link">CDC Website</a>
+				    <a href="#cdc_data" class="card-link">Table</a>
+				  </div> 
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card data_summary_entry">
+				  <div class="card-body">
+				    <h5 class="card-title">John Hopkins</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Data Summary</h6>
+				    <p class="card-text jh_data_summary">...</p>
+				    <a href="https://coronavirus.jhu.edu/map.html" class="card-link">John Hopkins Tracker</a>
+				  </div> 
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row data_summary">
+
+			<div class="col-md-6">
+				<div class="card data_summary_entry">
+				  <div class="card-body">
+				    <h5 class="card-title">World Metrics</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Data Summary</h6>
+				    <p class="card-text wm_data_summary">...</p>
+				    <a href="https://www.worldometers.info/coronavirus/country/us/" class="card-link">Word Metric Website</a>
+				    <a href="#wm_data" class="card-link">Table</a>
+				  </div> 
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card data_summary_entry">
+				  <div class="card-body">
+				    <h5 class="card-title">WHO</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Data Summary</h6>
+				    <p class="card-text who_data_summary">...</p>
+				    <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports" class="card-link">WHO Sit Reps</a>
+				  </div> 
+				</div>
+			</div>
+
+		</div>		
+
+		<!-- Section Title -->
+		<div class="jumbotron row section_header">
+			<h4>Data Tables</h4>
+		</div>
+
+		<!-- CDC Data Table Prototype for JS to Fill In -->
+		<div id="cdc_data" class="row">
+			<h4 id="table_name">CDC Table</h4>
+			<table id="content"/>
+				<tr>
+				    <th>State</th>
+				    <th>Reported</th>
+				    <th>Min</th>
+				    <th>Max</th>
+			  	</tr>
+			</table>
+		</div>
+
+		<a href="#" class="back_to_top"><button type="button" class="btn btn-info">Back to Top</button></a>
+
+		<!-- World Metrics Table Prototype for JS to Fill In -->
+		<div id="wm_data" class="row">
+			<h4 id="table_name">World Metrics Table</h4>
+			<table id="wm_data_table">
+				<tr>
+				    <th>State</th>
+				    <th>Total Cases</th>
+				    <th>New Cases</th>
+			  	</tr>
+			</table>
+		</div>
+
+		<a href="#" class="back_to_top"><button type="button" class="btn btn-info">Back to Top</button></a>
+<!---
+		<div id="jh_data" class="row">
+			<label for="jh_data_text">John Hopkins US Cases Number:</label>
+			<input type="text" id="jh_data_text" name="jh_data_text">
+		</div>
+
+		<div id="who_data" class="row">
+			<label for="who_data_text">World Health Organization US Cases Number:</label>
+			<input type="text" id="who_data_text" name="who_data_text">
+		</div>
+
+		<div id="derived_range" class="row">
+			<button type="button" id="predict_range">Deduce Range</button>
+			<input type="text" id="range_min" class="range_field" name="range_min">
+			<input type="text" id="range_max" class="range_field" name="range_max">
+		</div>
+	</div>
+-->
+</body>
+</html>
